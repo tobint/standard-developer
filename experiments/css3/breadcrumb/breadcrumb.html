@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Demonstrates using basic CSS to create a breadcrumb with pointed dividers">
+	<meta name="author" content="Tobin Titus">
+	
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../assets/css/footer.css">
+	
+	<style type="text/css">
+		html, body {
+			margin: 0px;
+			padding: 0px;
+			font-family: "Tahoma"
+		}
+		#toolbar {
+			margin: 20px auto;
+			padding: 0px;
+			height: 24px;
+			width: 450px;
+			overflow: hidden;
+			background-color: #c0c0c0;
+		}
+	
+		#toolbar p {
+			height: 22px;
+			background-color: #c0c0c0;
+			display: block;
+			overflow: hidden;
+			margin: 0px 0px 0px -15px;
+			padding:  2px 20px 0px 20px;			
+			float:left;
+		}
+		#toolbar p:hover {
+			background-color: #000;
+			color: #fff;
+			cursor: pointer;
+		}
+		
+		#toolbar>p:hover + .sep {
+			background: -webkit-linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 51%,rgba(0,0,0,1) 100%);			
+			background: linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0) 50%,rgba(0,0,0,1) 51%,rgba(0,0,0,1) 100%);
+		}
+		
+		.sep {
+			display: block;
+			height: 24px;
+			width: 24px;
+			float:left;
+			background-color: #c0c0c0;
+			margin: 0px 0px 0px -30px;
+			overflow: hidden;
+			
+			z-index: 20;
+			-webkit-box-shadow: 2px -2px 2px #999;
+			box-shadow: 2px -2px 2px #999;		
+			
+			-webkit-transform: rotate(45deg);
+			transform: rotate(45deg);
+			
+			background: -webkit-linear-gradient(45deg, rgba(192,192,192,0) 0%,rgba(192,192,192,0) 50%,rgba(192,192,192,1) 51%,rgba(192,192,192,1) 100%);			
+			background: linear-gradient(45deg, rgba(192,192,192,0) 0%,rgba(192,192,192,0) 50%,rgba(192,192,192,1) 51%,rgba(192,192,192,1) 100%);
+		}
+		.sep:hover {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="wrap">
+
+		<div class="container">
+			<div class="page-header">
+			  <h1>CSS Breadcrumb</h1>
+			</div>
+			<p class="lead">CSS 2D transforms + gradients + overflow = CSS breadcrumb</p>
+			<p>CSS styled breadcrumbs have been around for a while. However, getting a non-standard separator can be very tricky, particularly if you want the void of a separator to change color along with the highlighted stage in the breadcrumb.</p>
+			<p>This is one of a few ways to pull this off without using images. It leaves you open to completely modify the color scheme without worry about updating graphics.</p>
+
+			<div class="row">
+
+				<div id="toolbar">
+					<p>experiments</p>
+						<span class="sep"></span>		
+					<p>css3</p>
+						<span class="sep"></span>		
+					<p>toolbar</p>
+						<span class="sep"></span>
+					<p>rotation</p>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<div class="container">
+			<p class="text-muted credit">Copyright 2013, Standard Development, LLC</p>
+		</div>
+	</div>
+	
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	
+</body>
+</html>
