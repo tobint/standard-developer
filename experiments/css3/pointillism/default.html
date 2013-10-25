@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<meta name="description" content="Uses multiple small CSS radial gradients to recreate a given photo.">
+	<meta name="author" content="Tobin Titus">
+	
+	<link rel="shortcut icon" href="/ico/favicon.png">
+	
+	<title>CSS Pixel Gradient Demo</title>
+	
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../assets/css/footer.css">
+	
+	<link href="default.css" rel="stylesheet"/>
+</head>
+<body>
+
+	<div id="wrap">
+
+		<div class="container">
+			<div class="page-header">
+			  <h1>CSS Pointillism</h1>
+			</div>
+			
+			<p class="lead">CSS Gradients: Abused</p>
+			<p>CSS Gradients can do some powerful things. Some people dont't realize that you can apply multiple gradients to a single element. This results in a surface with the combination of all gradients.</p>
+			<p>Select a photo using the file picker (it doesn't upload anywhere). When the fans on your graphics card cool down, you'll get a CSS-rendered photo using thousands of radial gradients. This works by drawing the photo you select to a canvas in the browser, and then reading each pixel in the canvas to determine what parameters to add for the radial gradient.</p>
+			
+			<input type="file" id="files" name="file" />
+			
+			<div class="row">
+				<span class="label col-md-6">Canvas Preview:</span>
+				<span class="label col-md-6">CSS rendering:</span>
+			</div>
+			
+			
+			<div id="composer" class="row">
+				<div id="canvasContainer" class="col-md-6">
+					<canvas id="imageCanvas" width="200" height="200"></canvas>
+				</div>
+				<div id="cssContainer" class="col-md-6">
+					<div id="singlePreview">
+					</div>	
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+
+
+    <div id="footer">
+      <div class="container">
+        <p class="text-muted credit">Copyright 2013, Standard Development, LLC</p>
+      </div>
+    </div>
+
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	
+	<script src="default.js" type="text/javascript"></script>
+
+</body>
+</html>

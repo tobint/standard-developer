@@ -1,0 +1,25 @@
+#composerX {
+	width: 484px;
+	height: 424px;
+}
+#singlePreview {
+	width: 200px;
+	height: 200px;
+}
+#imageCanvas {
+	width: 200px;
+	height: 200px;
+}
+
+#tools {
+	clear: both;
+	margin-bottom: 20px;
+}
+
+#status {
+	width: 200px;
+	height: 40px;
+}
+#files {
+	margin-top: 20px;
+}

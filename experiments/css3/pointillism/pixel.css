@@ -1,0 +1,12 @@
+.pixel {
+	background-image:
+		radial-gradient(circle at 20px 20px, rgba(0,0,0,1), rgba(0,0,0,1) 1px, transparent 1.1px),
+		radial-gradient(circle at 50px 50px, rgba(0,0,0,1), rgba(0,0,0,1) 1px, transparent 1.1px),
+		radial-gradient(circle at 70px 70px, rgba(0,0,0,1), rgba(0,0,0,1) 1px, transparent 1.1px),
+		radial-gradient(circle at 90px 90px, rgba(0,0,0,1), rgba(0,0,0,1) 1px, transparent 1.1px),
+		radial-gradient(circle at 20px 100px, rgba(0,0,0,1), rgba(0,0,0,1) 1px, transparent 1.1px),
+		radial-gradient(circle at 27px 20px, rgba(0,0,0,1), rgba(0,0,0,1) 1px, transparent 1.1px),
+		radial-gradient(circle at 42px 64px, rgba(0,0,0,1), rgba(0,0,0,1) 1px, transparent 1.1px),
+		radial-gradient(circle at 20px 33px, rgba(0,0,0,1), rgba(0,0,0,1) 1px, transparent 1.1px);
+	;
+}
