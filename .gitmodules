@@ -1,0 +1,3 @@
+[submodule "demo-template"]
+	path = demo-template
+	url = https://github.com/tobint/sd-demo-template.git
