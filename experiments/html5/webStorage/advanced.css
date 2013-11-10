@@ -1,0 +1,95 @@
+html {
+  height: 100%;
+  background: rgb(219,219,219); 
+  background: -webkit-linear-gradient(top,  rgb(219,219,219) 0%,rgb(238,238,238) 15%,rgb(255,255,255) 15%,rgb(254,254,254) 100%);
+  background: linear-gradient(to bottom,  rgb(219,219,219) 0%,rgb(238,238,238) 15%,rgb(255,255,255) 15%,rgb(254,254,254) 100%);
+}
+body {
+  color: #333;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+header h1 {
+  margin: 5px 0px;
+  padding: 0x;
+}
+header p {
+  margin: 0px;
+}
+
+#toolbox, #output {
+  float: left;
+  margin: 10px 0px 0px 5px;
+  border: 0px solid #c0c0c0;
+}
+#toolbox {
+  width: 250px;
+}
+#output {
+  width: 390px;
+}
+h2 {
+  margin: 0px 10px 10px 10px;
+  padding: 0px;
+  border-bottom: 3px solid #ddd;
+  font-size: 20px;
+}
+
+h3 {
+  margin: 0px 10px 10px 10px;
+  padding: 0px 0px 0px 5px;
+  background-color: rgba(240, 240, 240, .7);
+  font-size: 16px;
+}
+.form {
+  margin: -7px 10px 15px 10px;
+}
+label, .label {
+  display: inline-block;
+  width: 55px;
+  text-align: right;
+}
+input[type=text] {  
+  width: 150px;
+}
+input[type=button] {
+  width: 155px;
+}
+input[type=radio]{
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+#outputData span {
+  display: block;
+  margin: 0px 10px 5px 10px;
+}
+.error {
+  background-color: rgb(255, 50, 50);
+}
+.warn {
+  background-color: rgb(255, 255, 50);
+}
+#content {
+  width: 720px;
+  padding: 20px;
+  margin: 0px auto;
+  background-color: #fff;
+  -moz-box-shadow: 0 0 5px #888;
+  -webkit-box-shadow: 0 0 5px#888;
+  box-shadow: 0 0 5px #888;
+}
+#content footer {
+  padding-top: 20px;
+  clear: both;
+}
+#copyright {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #c0c0c0;
+}
+
+a, a:visited {
+  color: #333;
+}

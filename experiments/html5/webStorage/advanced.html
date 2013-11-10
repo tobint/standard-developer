@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="description" content="webStorage: advanced">
+  <meta name="author" content="Tobin Titus">
+
+  <link rel="shortcut icon" href="/ico/favicon.png">
+
+  <title>webStorage: advanced</title>
+
+  <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../../../assets/css/footer.css">
+  <link rel="stylesheet" type="text/css" href="advanced.css">
+</head>
+<body>
+
+  <div id="wrap">
+    <div class="container">
+      <div class="page-header">
+        <h1>Web Storage</h1>
+      </div>
+      <p class="lead">advanced session/local storage</p>
+      <p>This experiment demonstrates how you write to <a href="http://dev.w3.org/html5/webstorage/">web storage</a> and read values back. Open a second window to the same location as this experiment and watch what happens when you add more data to localStorage or sessionStorage.</p>
+    </div>
+
+    <div class="container">
+
+      <div id="toolbox">
+        <h2>tools</h2>
+
+        <div id="storageTools">
+          <h3>storage type</h3>
+          <div class="form">
+            <label for="storageDevice">device</label>
+              <input type="radio" name="storageDevice" value="localStorage" id="lRadio" checked>local
+              <input type="radio" name="storageDevice" value="sessionStorage" id="sRadio">session<br/>
+          </div>
+        </div>
+
+        <div id="writeTools">
+          <h3>write</h2>
+          <div class="form">
+            <label for="writeKey">key</label>     <input type="text" id="writeKey" placeholder="localStorage key"><br/>
+            <label for="writeValue">value</label> <input type="text" id="writeValue" placeholder="localStorage value"><br/>
+            <label for="writeButton"></label>     <input type="button" id="writeButton" value="write">
+          </div>
+        </div>
+
+        <div id="readTools">
+          <h3>read</h2>
+          <div class="form">
+            <label for="readKey">key</label>      <input type="text" id="readKey" placeholder="localStorage key"><br/>
+            <label for="readButton"></label>      <input type="button" id="readButton" value="read">
+          </div>
+        </div> 
+
+        <div id="bulkTools">
+          <h3>bulk</h3>
+          <div class="form">
+            <label for="clearButton">clear all</label>    <input type="button" id="clearButton" value="clear">      
+            <label for="enumButton">read all</label>      <input type="button" id="enumButton" value="enumerate">
+          </div>
+        </div>
+
+      </div>
+
+      <div id="output">
+        <h2>output</h2>
+        <div id="outputData"></div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted credit">Copyright 2013, Standard Development, LLC</p>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="advanced.js"></script>
+</body>
+</html>

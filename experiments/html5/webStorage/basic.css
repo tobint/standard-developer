@@ -1,0 +1,36 @@
+body {
+	font-family: "Segio UI", Tahoma;
+	font-size: 16px;
+}
+#toolbox {
+	padding: 20px 20px;
+	width: 275px;
+	float: left;
+	border: 0px solid #c0c0c0;
+}
+label, .label {
+	width: 50px;
+	text-align: right;
+	font-weight: bold;
+	display: inline-block;
+	margin-top: 3px;
+}
+h2 {
+	margin: 0px 0px 10px 0px;
+	padding: 0px;
+	border-bottom: 3px solid #444;
+	font-size: 20px;
+}
+#output {
+	padding: 20px 20px;
+	margin-left: 20px;
+	width: 350px;
+	float: left;
+	border: 0px solid #c0c0c0;
+}
+.error {
+	background-color: #ff3333;
+}
+input {
+	margin-top: 3px;
+}

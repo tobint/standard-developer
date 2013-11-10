@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="webStorage: basic">
+	<meta name="author" content="Tobin Titus">
+
+	<link rel="shortcut icon" href="/ico/favicon.png">
+
+	<title>webStorage: basic</title>
+
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../assets/css/footer.css">
+	<link rel="stylesheet" href="basic.css">
+</head>
+<body>
+
+	<div id="wrap">
+		<div class="container">
+			<div class="page-header">
+			<h1>Web Storage</h1>
+			</div>
+			<p class="lead">basic webStorage: read/write</p>
+			<p>This experiment demonstrates how you write to web storage and read values back to localStorage.</p>
+		</div>
+
+		<div class="container">
+			<div id="toolbox">
+				<h2>tools</h2>
+				<label for="writeKey">key</label>
+					<input type="text" id="writeKey" placeholder="localStorage key"><br/>
+				<label for="writeValue">value</label>
+					<input type="text" id="writeValue" placeholder="localStorage value"><br/>
+				<label for="writeButton"></label>		
+					<input type="button" id="writeButton" value="write">
+			</div>
+			<div id="output">
+				<h2>output</h2>
+				<div id="output-data"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="footer">
+		<div class="container">
+			<p class="text-muted credit">Copyright 2013, Standard Development, LLC</p>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="basic.js"></script>
+</body>
+</html>
