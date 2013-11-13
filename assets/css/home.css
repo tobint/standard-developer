@@ -1,0 +1,158 @@
+/* Standard Element Styles
+ *****************************************************************************/
+html, body {
+  color: rgb(51, 51, 51);
+  font-family: "Segoe UI",Tahoma,Helvetica,Sans-Serif;
+  font-weight: normal;
+  background-color: rgb(250, 250, 253);
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+a {
+	color: rgb(43, 166, 203);
+	line-height: inherit;
+	text-decoration: none;
+}
+
+ul, ol, dl {
+	line-height: 1.6;
+	font-size: 14px;
+	margin-bottom: 17px;
+	list-style-position: outside;
+}
+
+/* Banner
+ *****************************************************************************/
+.light {
+  color: rgb(148, 184, 219);
+}
+.logo-d {
+  color: rgb(100, 152, 203);
+}
+.page-header {
+	border: 0px;
+}
+
+/* Content
+ *****************************************************************************/
+div[role='content'] article {
+	margin: 0px ;
+	padding: 4px;
+	min-height: 144px;
+	overflow: hidden;
+	display: block;
+}
+
+div[role='content'] article header {
+	border-radius: 3px;
+	padding: 4px;
+	cursor: pointer;
+	background-color: rgb(240, 245, 250);
+	border: 1px solid rgb(208, 213, 234);
+	height: 133px;
+	position: relative;
+}
+
+div[role='content'] article h3 {
+	text-align: right;
+	right: 8px;
+	bottom: 0px;
+	font-size: 16px;
+	margin-bottom: 6px;
+	position: absolute;
+}
+
+div[role='content'] article h6 {
+	left: 10px;
+	top: 0px;
+	color: rgba(180, 200, 230, 0.9);
+	position: absolute;
+}
+
+/* Right Panel
+ *****************************************************************************/
+aside h5 {
+	margin-top: 12px;
+	margin-bottom: 4px;
+}
+
+aside p {
+	line-height: 1.35;
+	font-size: 13px;
+	font-style: italic;
+}
+
+.side-nav {
+	list-style: none;
+	margin: 0px;
+	padding: 17px 0px;
+	display: block;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	display: inline-block;
+}
+
+.side-nav li {
+	padding-top: 0px;
+	padding-right: 16px;
+	float: left;
+	display: inline-block;
+	list-style: none;
+	margin: 0px 0px 7px;
+	display: block;
+}
+
+.side-nav li a {
+	display: block;
+}
+
+div[role='byline'].panel h5 {
+	margin-bottom: 4px;
+}
+
+.panel {
+	background: rgb(242, 242, 242);
+	margin: 4px 0px 22px;
+	padding: 20px;
+	border: 1px solid rgb(230, 230, 230);
+	border-radius: 3px;
+}
+
+.panel > :first-child {
+	margin-top: 0px;
+}
+
+.panel > :last-child {
+	margin-bottom: 0px;
+}
+
+
+/* Footer
+ *****************************************************************************/
+footer .link-list {
+	padding-left: 0px;
+	border-left-color: rgb(221, 221, 221);
+	border-left-width: 1px;
+	border-left-style: solid;
+}
+
+ul.inline-list > li, ul.link-list > li {
+	list-style: none;
+	margin-left: 22px;
+	float: left;
+	display: block;
+}
+
+ul.inline-list > li > *, ul.link-list > li > * {
+	display: block;
+}
+
+ul.inline-list, ul.link-list {
+	list-style: none;
+	margin: 0px 0px 17px -22px;
+	padding: 0px;
+	overflow: hidden;
+}
+
+.right {
+	float: right;
+}
