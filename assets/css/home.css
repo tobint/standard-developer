@@ -131,6 +131,12 @@ div[role='byline'].panel h5 {
 
 /* Footer
  *****************************************************************************/
+footer {
+	border-top: 1px solid  rgb(221, 221, 221);
+	margin-top: 20px;
+	padding-top: 10px;
+}
+
 footer .link-list {
 	padding-left: 0px;
 	border-left-color: rgb(221, 221, 221);

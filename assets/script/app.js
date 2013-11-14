@@ -52,7 +52,7 @@ function loop(dataArray, filter) {
   var topics = [];
 
   for(var d in dataArray) {
-    output +="<article  class=\"col-lg-3 col-md-3 col-sm-3 col-xs-12\" tabindex=\"" + (count+1) + "\"><header>";
+    output +="<article  class=\"col-lg-3 col-md-3 col-sm-3 col-xs-6\" tabindex=\"" + (count+1) + "\"><header>";
     output += "<h3><a href=\"" + dataArray[d].file + "\" tabindex='-1'>" + dataArray[d].name + "</a></h3>";
     output += "<h6>" + dataArray[d].area + "</h6>"
     output += "</header></article>";
@@ -82,7 +82,7 @@ function load() {
 }
 
 function navigate() {
-  alert("hello");
+
 }
 
 window.addEventListener("load", load, false);
