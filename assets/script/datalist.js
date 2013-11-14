@@ -40,7 +40,7 @@ var oldExperiments = [
 var	experiments = 
 [
 	{
-		"area"			: "offline",
+		"area"			: "storage",
 		"technologies"	: "HTML5,JavaScript",
 		"topics"		: "Data",
 		"name" 			: "Basic Web Storage",
@@ -48,7 +48,7 @@ var	experiments =
 		"description" 	: "Web localStorage and the onsubmit event."
 	},					
 	{
-		"area"			: "offline",
+		"area"			: "storage",
 		"technologies"	: "HTML5,JavaScript",
 		"topics"		: "Data",
 		"name" 			: "Advanced Web Storage",
