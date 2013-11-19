@@ -17,16 +17,15 @@ do {
 	$demoCategory = Read-Host "Demo Category "
 } until ( $demoCategory )
 
+$demoPath = ($experimentsPath + $demoCategory + "\" + $demoFolder)
+
 if( -Not ( test-path ($experimentsPath  + $demoCategory) ) ) {
-	$demoPath = ($experimentsPath + $demoCategory + "\" + $demoFolder)
 
 	Write-Host "Demo category not found. Creating: " + $demoPath -ForegroundColor yellow
+} 
 	New-Item -ItemType directory -Path $demoPath
-
 	Write-Host "Path created. Copying template. " -ForegroundColor yellow
-
 	Copy-Item ($templatePath + "\*") -Destination ($demoPath)  -Exclude ".git*"
-}
 
 do {
 	$demoDescription = Read-Host "Description "
