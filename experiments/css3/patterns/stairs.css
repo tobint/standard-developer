@@ -1,0 +1,55 @@
+.stairs {
+	background-position: 7px 0px, 0% 0%, 0% 0%, 0% 0%; 
+	background-image: 	linear-gradient(63deg, rgb(153, 153, 153) 23%, transparent 23%), 
+						linear-gradient(63deg, transparent 74%, rgb(153, 153, 153) 78%), 
+						linear-gradient(63deg, transparent 34%, rgb(153, 153, 153) 38%, rgb(153, 153, 153) 58%, transparent 62%), 
+						none; 
+	background-attachment: scroll, scroll, scroll, scroll; 
+	background-repeat: repeat, repeat, repeat, repeat; 
+	background-size: 16px 48px; 
+	background-origin: padding-box, padding-box, padding-box, padding-box; 
+	background-clip: border-box, border-box, border-box, border-box; 
+	background-color: rgb(68, 68, 68);
+	-webkit-animation: webkit-animate-steps 3s infinite;
+	-moz-animation: moz-animate-steps 3s infinite;
+	-o-animation: o-animate-steps 3s infinite;
+	animation: animate-steps 3s infinite;
+}
+
+@keyframes animate-steps {
+	0% {
+		background-position: 7px 0px, 0px 0px, 0px 0px, 0px 0px; 
+	}
+	100% {
+		background-position: 7px 48px, 0px 48px, 0px 48px, 0px 48px; 
+	}
+}
+
+@-webkit-keyframes webkit-animate-steps {
+	0% {
+		background-position: 7px 0px, 0px 0px, 0px 0px, 0px 0px; 
+	}
+	100% {
+		background-position: 7px 48px, 0px 48px, 0px 48px, 0px 48px; 
+	}
+}
+
+
+@-moz-keyframes moz-animate-steps {
+	0% {
+		background-position: 7px 0px, 0px 0px, 0px 0px, 0px 0px; 
+	}
+	100% {
+		background-position: 7px 48px, 0px 48px, 0px 48px, 0px 48px; 
+	}
+}
+
+
+@-o-keyframes o-animate-steps {
+	0% {
+		background-position: 7px 0px, 0px 0px, 0px 0px, 0px 0px; 
+	}
+	100% {
+		background-position: 7px 48px, 0px 48px, 0px 48px, 0px 48px; 
+	}
+}

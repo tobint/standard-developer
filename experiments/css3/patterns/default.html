@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<meta name="description" content="Demonstrates using CSS to animate CSS-generated background patterns">
+	<meta name="author" content="Tobin Titus">
+	
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../../assets/css/footer.css">
+	
+	<style type="text/css">
+		html, body {
+			margin: 0px; 
+			padding: 0px;
+			font-family: Segoe UI;
+		}
+		
+		#controlBox {
+			padding: 0px 20px 0px 20px;
+		}
+
+		.pattern {
+			padding-top: 30px;
+			width: 100%;
+			height: 25px;
+			margin-bottom: 40px;
+			text-align: center;
+			border: 1px solid #c0c0c0;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		
+		#sample {
+			margin: 0px;
+			width: 100%;
+			height: 400px;
+			border: 1px solid #c0c0c0;
+		}
+	</style>
+
+
+	<link href="stairs.css" rel="stylesheet" />
+	<link href="argyle.css" rel="stylesheet" />
+	<link href="brady.css" rel="stylesheet" />
+</head>
+<body>
+
+	<div id="wrap">
+
+		<div class="container">
+			<div class="page-header">
+			  <h1>Animating CSS Gradient Patterns</h1>
+			</div>
+			<p class="lead">CSS Gradients and CSS Animations</p>
+			<p>CSS Gradients can be used in a lot of fun ways to create patterns. There is a <a href="http://lea.verou.me/css3patterns/">CSS Patterns Gallery</a> dedicated to submitting CSS patterns. </p>
+			<p>This experiment shows how to animate some of the patterns using CSS animations.</p>
+
+			<div class="row">
+
+				<div id="controlBox" class="col col-sm-12 col-md-3 col-lg-3 col-xl-3">
+					<h4>Patterns</h4>
+					<div class="pattern stairs">stairs</div>
+					<div class="pattern argyle">argyle</div>
+					<div class="pattern brady">brady</div>
+				</div>
+
+				<div class="col col-sm-12 col-md-9 col-lg-9 col-xl-9">
+					<h4>Large Sample</h4>
+					<div id="sample" class="brady"></div>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<div class="container">
+			<p class="text-muted credit">Copyright 2014, Standard Development, LLC</p>
+		</div>
+	</div>
+
+	<script>
+		function changePattern(e) {
+			document.getElementById("sample").className = e.srcElement.className.replace("pattern ", "");
+		}
+
+		function load() {
+			var patterns = document.querySelectorAll(".pattern");
+			for(var i = 0; i < patterns.length; i++ )
+			{
+				patterns[i].addEventListener("click", changePattern, false);
+			}
+		}
+
+		window.addEventListener("load", load, false);
+	</script>
+
+	
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>

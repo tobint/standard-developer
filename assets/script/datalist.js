@@ -78,6 +78,14 @@ var	experiments =
 		"name"			: "Animation Types",
 		"file"			: "experiments/performance/animationTypes/default.html",
 		"description"	: "Demonstrates the differences in dependent and independent animations."
+	},
+	{
+		"area"			: "css3",
+		"technologies"	: "CSS",
+		"topics"		: "Animation",
+		"name"			: "Animating CSS Gradients",
+		"file"			: "experiments/css3/patterns/default.html",
+		"description"	: "Creates CSS pattners on a div and animates them."
 	}
 ];
 
